@@ -14,8 +14,10 @@ router.post("/register", [
     body("password")
     .isLength({min:6})
     .withMessage("password will be 6 Character "),
+
 ],
 userController.registerUser
+
 );
 
 module.exports = router;
