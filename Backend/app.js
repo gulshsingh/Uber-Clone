@@ -17,7 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
-PP
+
 app.use("/users", userRoutes);
+
 
 module.exports = app;
